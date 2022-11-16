@@ -1,0 +1,34 @@
+\usepackage[utf8]{inputenc}
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{1}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]
+{\normalfont\normalsize\bfseries}{\thechapter.}{0.5em}{}
+\titleformat{\section}[block]
+{\normalfont\normalsize\bfseries}{}{0.5em}{\thesection. }
+
+\titleformat{\subsection}[block]
+{\normalfont\normalsize\bfseries}{}{0.5em}{\thesubsection. }
+
+\usepackage{titletoc}
+\titlecontents{chapter}
+[0pt]
+{\bfseries}
+{\chaptername\ \thecontentslabel.\quad}
+{}
+{\hfill\contentspage}
+
+
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Roman{subsection}}
+
+\setlength{\parindent}{0pt}
+
+\usepackage{enumitem}
+
+\usepackage{xcolor}
+
+\usepackage{hyperref}
