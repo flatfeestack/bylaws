@@ -4,13 +4,9 @@
 \setcounter{tocdepth}{1}
 
 \usepackage{titlesec}
-\titleformat{\chapter}[hang]
-{\normalfont\normalsize\bfseries}{\thechapter.}{0.5em}{}
-\titleformat{\section}[block]
-{\normalfont\normalsize\bfseries}{}{0.5em}{\thesection. }
-
-\titleformat{\subsection}[block]
-{\normalfont\normalsize\bfseries}{}{0.5em}{\thesubsection. }
+\titleformat{\chapter}[hang]{\normalfont\normalsize\bfseries\raggedright}{\thechapter.}{0.5em}{}
+\titleformat{\section}[block]{\normalfont\Large\bfseries\raggedright}{\thesection.}{0.5em}{}
+\titleformat{\subsection}[block]{\normalfont\large\bfseries\raggedright}{\thesubsection.}{0.5em}{}
 
 \usepackage{titletoc}
 \titlecontents{chapter}
@@ -32,3 +28,5 @@
 \usepackage{xcolor}
 
 \usepackage{hyperref}
+
+\hypersetup{colorlinks=true, linkcolor=black}
