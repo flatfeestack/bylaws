@@ -21,3 +21,15 @@ jobs:
         with:
           name: PDF
           path: bylaws.pdf
+  checksum:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Calculate Checksum
+        run:  bash ${GITHUB_WORKSPACE}/checksum.sh
+      - name: publish checksum
+        uses: actions/upload-artifact@v3
+        with:
+          name: CHECKSUM
+          path: checksum.sha256
