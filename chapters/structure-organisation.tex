@@ -1,4 +1,4 @@
-\section{STRUCTURE AND ORGANISATION}
+\section{STRUCTURE AND ORGANISATION}\label{sec:structure-and-organisation}
 
 \item \textbf{Bodies} \\
 DAA's bodies are the:
@@ -6,74 +6,71 @@ DAA's bodies are the:
     \item DAA Ballot Vote ("Urabstimmung");
     \item DAA Chairman ("Vorstand");
     \item DAA Member Community;
-    \item DAA Whitelisters
 \end{itemize}
 
 \item \textbf{General Concept of Competences and Duties} \\
 The objective of DAA is to establish a decentralised and democratic association with flat hierarchies.
-Therefore, the DAA Chairman (“Vorstand”) will have only those competences, which actually require the action of an individual, natural person, such as representation duties or the duty to keep the books.
+Therefore, the DAA Chairman ("Vorstand") will have only those competences, which actually require the action of an individual, natural person, such as representation duties or the duty to keep the books.
 The DAA Ballot Vote ("Urabstimmung") has those elementary competences, which are mandatory stipulated for an association assembly by Swiss law (such as the change of statutes, the liquidation of the association, and others).
 The DAA Ballot Vote will be held digital, allowing the proper democratic decision-making required by Swiss law.
-Thirdly, the DAA Member Community shall be the body, which can decide about the "daily business" such as the proposal and support of projects and the funding allocation to projects.
+Thirdly, the DAA Member Community ("Mitglied") shall be the body, which can decide about the "daily business" such as the proposal and support of projects and the funding allocation to projects.
 Every member of the association is also part of the DAA Member Community, which provides a blockchain-based technical infrastructure to efficiently, democratically and transparently propose and vote.
-See Visualisation in Annex?????
 
 \item \textbf{Underlying Technology} \\
-The DAA is technically built on an Ethereum-based Smart Contract System (SCS).
+The DAA is technically built with Ethereum Smart Contracts.
 All voting will take place on this technical infrastructure.
-The relevant technical functions are hereinafter written in red/italic.
+The relevant technical functions are hereinafter written in italic.
 To be able to vote, holding a certain amount of Ether is necessary for every member (transaction fees, gas fees).
 
 \item \textbf{DAA Chairman (Vorstand)} \\
-The DAA has one (1) Chairman with the following competencies and duties:
+The DAA has at minimum two (2) Chairmans with the following competencies and duties:
 \begin{enumerate}
     [label=(\alph*)]
     \item Representing the DAA to the outside world;
     \item Keeping the books and creating the necessary financial statements of the DAA;
-    \item Preparing and calling the next DAA Ballot Vote (\textcolor{red}{\emph{setVotingSlot}});
-    \item Regulating signatory powers;
-    \item Adding and removing member whitelisters (\textcolor{red}{\emph{addWhitelisters}} \& \textcolor{red}{\emph{removeWhitelisters}});
+    \item Preparing and calling the next DAA Ballot Vote (\emph{setVotingSlot});
+    \item Reviewing member applicants on their eligibility to join the DAA.
+          If the member meets the requirements of Art. 11, the DAA Chairman will add their public keys to the member registry (*whitelistMember*);
     \item Remove Members who haven't paid their membership fees;
     \item Appointing the informal DAA Board of Advisors; %TODO
-    \item Keeping the member registry (name, address, e-mail) together with the DAA whitelisters. %TODO
+    \item Keeping the member registry (name, address, e-mail); %TODO
 \end{enumerate}
-The term of office for the DAA Chairman starts with the foundation of this DAA and ends when he's been replaced via a proposal.
-If the DAA Chairman becomes unable to act or loses his private key, an extraordinary DAA Ballot Vote will be called and a new DAA Chairman elected.
-The personal liability of the DAA Chairman is limited to cases of gross negligence.
+The term of office for the DAA Chairmans starts with the foundation of this DAA and ends when he's been replaced via a proposal.
+If a DAA Chairman becomes unable to act or loses his private key, he must be replaced with a new Chairman in the next DAA Ballot Vote.
+If all the DAA chairmans are unable to act, an extraordinary DAA Ballot Vote will be called and two new DAA Chairmans must be elected.
+The personal liability of a DAA Chairman is limited to cases of gross negligence.
 
 \item \textbf{DAA Ballot Vote ("Urabstimmung")} \\
 \begin{enumerate}[label=\textbf{\arabic*.}]
     \item \textbf{Competences} \\
     The DAA Ballot Vote shall be the highest governing body of the DAA.
-    It is chaired by the DAA Chairman or, when the Chairman is unavailable, by another member appointed by the Assembly.
+    It is chaired by one of the DAA Chairmans.
     The DAA Ballot Vote has the duty of collecting all the votes on the proposals on that vote.
+    The DAA Member Community has a one day timeslot to vote for every proposal in the Ballot Vote.
 
     \item \textbf{Voting Majorities} \\
     Resolutions shall be adopted by a simple majority of the members participating at the individual DAA Ballot Vote.
     At least 1/5 of the DAA Member Community must vote on a proposal to become successful.
-    The update of the underlying code (lit. g ???) and the dissolution of the DAA (lit. e.????) require a majority of 2/3 of the DAA Member Community. %TODO
-    The DAA Member Community has a one day timeslot to vote for every proposal in the Ballot Vote.
+    The update of the underlying code and the dissolution of the DAA require a majority of 2/3 of the DAA Member Community.
 
     \item \textbf{Election Process for DAA Chairman} \\
-    % TODO: Chairman election
     Any member can propose himself for candidacy as chairman.
-    The candidate with most votes in favour will be the new DAA Chairman, beginning at the end of the DAA Assembly.
-    If two or more candidates have the same (and the most) number of votes, a new election on only those candidates will take place.
+    If the proposal is successful the new DAA Chairman term starts at the execution of the proposal.
 
     \item \textbf{Convocation} \\
     The DAA Ballot Vote shall be held in regular intervals.
-    The DAA Chairman can set the date at least 1 month before the DAA Ballot Vote (\textcolor{red}{\emph{setVotingSlot}}).
+    A DAA Chairman can set the date at least 1 month before the DAA Ballot Vote (\emph{setVotingSlot}).
     The DAA Chairman will inform the members electronically on the place and date.
     A DAA Ballot Vote lasts one full day. \\ \\
 
-    Every member can propose an extraordinary DAA Ballot Vote (proposeGeneralAssemblyDate). %TODO
+    Every member can propose an extraordinary DAA Ballot Vote (\emph{propose}). %TODO
     The time slot for the vote (voteForGeneralAssemblyDate) is two weeks.
     If 20\% of all DAA members support the extraordinary DAA Ballot Vote, it will take place on the specified date.
     If the DAA Chairman is voting on behalf of the extraordinary DAA Assembly, it will take place irrespective of any majority or quorum. \\ \\
     The DAA Ballot Vote is held purely digital.
 
-    \item \textbf{Motions \& Agenda Items} \\
-    Motions from members must be submitted at least 7 days prior to the DAA Ballot Vote using the specific DAO proposal function.
+    \item \textbf{Proposals \& Agenda Items} \\
+    Proposals from members must be submitted at least 7 days prior to the DAA Ballot Vote using the specific DAO proposal function (\emph{propose}).
 \end{enumerate}
 
 
@@ -89,8 +86,8 @@ The personal liability of the DAA Chairman is limited to cases of gross negligen
     The DAA Member Community has the following competences:
     \begin{enumerate}
         [label=(\alph*)]
-        \item Proposing new projects and funding allocations (\textcolor{red}{\emph{propose}});
-        \item Voting on those projects and the use of funds (\textcolor{red}{\emph{castVote}} or \textcolor{red}{\emph{castVoteWithReason}});
+        \item Proposing new projects and funding allocations (\emph{propose});
+        \item Voting on those projects and the use of funds (\emph{castVote} or \emph{castVoteWithReason});
         \item Expelling DAA members (see Art. 17).
     \end{enumerate}
 
@@ -100,9 +97,3 @@ The personal liability of the DAA Chairman is limited to cases of gross negligen
     The votes require simple majority and a 1/5 quorum of the DAA Member Community.
     The time slot for a proposal vote is one day during the DAA Ballot Vote.
 \end{enumerate}
-
-\item \textbf{DAA Whitelisters} \\
-The DAA Whitelisters review member applicants on their eligibility to join the DAA.
-If the member meets the requirements of Art. 11, the DAA Whitelisters will add their public keys to the member registry (\textcolor{red}{\emph{whitelistMember}}).
-The DAA Whitelisters are be appointed and removed by the DAA Chairman (\textcolor{red}{\emph{addWhitelisters}} \& \textcolor{red}{\emph{removeWhitelister}}).
-The minimum amount of DAA Whitelisters is two (2).
