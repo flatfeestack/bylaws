@@ -23,35 +23,34 @@ The relevant technical functions are hereinafter written in italic.
 To be able to vote, holding a certain amount of Ether is necessary for every member (transaction fees, gas fees).
 
 \item \textbf{DAA Chairman (Vorstand)} \\
-The DAA has at minimum two (2) Chairmans with the following competencies and duties:
+The DAA has at minimum two (2) Chairmen with the following competencies and duties:
 \begin{enumerate}
     [label=(\alph*)]
     \item Representing the DAA to the outside world;
     \item Keeping the books and creating the necessary financial statements of the DAA;
     \item Preparing and calling the next DAA Ballot Vote (\emph{setVotingSlot});
     \item Reviewing member applicants on their eligibility to join the DAA.
-          If the member meets the requirements of Art. 11, the DAA Chairman will add their public keys to the member registry (*whitelistMember*);
-    \item Remove Members who haven't paid their membership fees;
+          If the member meets the requirements of Art. 11, the DAA Chairman will add their public keys to the member registry (\emph{approveMembership});
+    \item Remove Members who haven't paid their membership fees(\emph{removeMembersThatDidntPay});
     \item Appointing the informal DAA Board of Advisors; %TODO
     \item Keeping the member registry (name, address, e-mail); %TODO
 \end{enumerate}
-The term of office for the DAA Chairmans starts with the foundation of this DAA and ends when he's been replaced via a proposal.
+The term of office for the DAA Chairmen starts with the foundation of this DAA and ends when he's been replaced via a proposal.
 If a DAA Chairman becomes unable to act or loses his private key, he must be replaced with a new Chairman in the next DAA Ballot Vote.
-If all the DAA chairmans are unable to act, an extraordinary DAA Ballot Vote will be called and two new DAA Chairmans must be elected.
+If all the DAA Chairmen are unable to act, an extraordinary DAA Ballot Vote will be called and two new DAA Chairmen must be elected.
 The personal liability of a DAA Chairman is limited to cases of gross negligence.
 
 \item \textbf{DAA Ballot Vote ("Urabstimmung")} \\
 \begin{enumerate}[label=\textbf{\arabic*.}]
     \item \textbf{Competences} \\
     The DAA Ballot Vote shall be the highest governing body of the DAA.
-    It is chaired by one of the DAA Chairmans.
+    It is chaired by one of the DAA Chairmen.
     The DAA Ballot Vote has the duty of collecting all the votes on the proposals on that vote.
     The DAA Member Community has a one day timeslot to vote for every proposal in the Ballot Vote.
 
     \item \textbf{Voting Majorities} \\
     Resolutions shall be adopted by a simple majority of the members participating at the individual DAA Ballot Vote.
     At least 1/5 of the DAA Member Community must vote on a proposal to become successful.
-    The update of the underlying code and the dissolution of the DAA require a majority of 2/3 of the DAA Member Community.
 
     \item \textbf{Election Process for DAA Chairman} \\
     Any member can propose himself for candidacy as chairman.
@@ -63,7 +62,7 @@ The personal liability of a DAA Chairman is limited to cases of gross negligence
     The DAA Chairman will inform the members electronically on the place and date.
     A DAA Ballot Vote lasts one full day. \\ \\
 
-    Every member can propose an extraordinary DAA Ballot Vote (\emph{propose}). %TODO
+    Every member can propose an extraordinary DAA Ballot Vote (\emph{propose}).
     The time slot for the vote (voteForGeneralAssemblyDate) is two weeks.
     If 20\% of all DAA members support the extraordinary DAA Ballot Vote, it will take place on the specified date.
     If the DAA Chairman is voting on behalf of the extraordinary DAA Assembly, it will take place irrespective of any majority or quorum. \\ \\
@@ -92,7 +91,7 @@ The personal liability of a DAA Chairman is limited to cases of gross negligence
     \end{enumerate}
 
     \item \textbf{Proposal \& Voting Process} \\
-    The whole voting process on the DAA Member Community is purely digital and block- chain-based.
+    The whole voting process on the DAA Member Community is purely digital and blockchain based.
     Every member can submit a proposal to pay Ether to a destination address (the amount can be zero).
     The votes require simple majority and a 1/5 quorum of the DAA Member Community.
     The time slot for a proposal vote is one day during the DAA Ballot Vote.
