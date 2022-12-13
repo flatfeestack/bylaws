@@ -3,13 +3,13 @@
 \item \textbf{Bodies} \\
 DAA's bodies are the:
 \begin{itemize}
-    \item DAA Chairman ("Vorstand");
+    \item DAA Council Member ("Vorstand");
     \item DAA Ballot Vote ("Urabstimmung");
 \end{itemize}
 
 \item \textbf{General Concept of Competences and Duties} \\
 The objective of DAA is to establish a decentralised and democratic association with flat hierarchies.
-Therefore, the DAA Chairman ("Vorstand") will have only those competences, which actually require the action of an individual, natural person, such as representation duties or the duty to keep the books.
+Therefore, the DAA Council member ("Vorstand") will have only those competences, which actually require the action of an individual, natural person, such as representation duties or the duty to keep the books.
 The DAA Ballot Vote ("Urabstimmung") has those elementary competences, which are mandatory stipulated for an association assembly by Swiss law (such as the change of statutes, the liquidation of the association, and others).
 The DAA Ballot Vote will be held digital, allowing the proper democratic decision-making required by Swiss law.
 Additionally, the DAA Ballot Vote shall be the body, which can decide about the "daily business" such as the proposal and support of projects and the funding allocation to projects.
@@ -21,8 +21,8 @@ All voting will take place on this technical infrastructure.
 The relevant technical functions are hereinafter written in italic.
 To be able to vote, holding a certain amount of Ether is necessary for every member (transaction fees, gas fees).
 
-\item \textbf{DAA Chairman (Vorstand)} \\
-The DAA has at minimum two (2) Chairmen with the following competencies and duties:
+\item \textbf{DAA Council member (Vorstand)} \\
+The DAA has at minimum two (2) council members with the following competencies and duties:
 \begin{enumerate}
 [label=(\alph*)]
     \item Representing the DAA to the outside world;
@@ -30,20 +30,20 @@ The DAA has at minimum two (2) Chairmen with the following competencies and duti
     \item Preparing and calling the next DAA Ballot Vote (\emph{setVotingSlot});
     \item Canceling a DAA Ballot Vote, if they have a good reason for it (\emph{cancelVotingSlot});
     \item Reviewing member applicants on their eligibility to join the DAA.
-    If the member meets the requirements of Art. 11, the DAA Chairman will add their public keys to the member registry (\emph{approveMembership});
-    \item Remove Members who haven't paid their membership fees(\emph{removeMembersThatDidntPay});
+    If the member meets the requirements of Art. 11, the DAA Council member will add their public keys to the member registry (\emph{approveMembership});
+    \item Remove Members who haven't paid their membership fees (\emph{removeMembersThatDidntPay});
     \item Keeping the member registry (name, address, e-mail);
 \end{enumerate}
-The term of office for the DAA Chairmen starts with the foundation of this DAA and ends when he's been replaced via a proposal.
-If a DAA Chairman becomes unable to act or loses his private key, he must be replaced with a new Chairman in the next DAA Ballot Vote.
-If all the DAA Chairmen are unable to act, an extraordinary DAA Ballot Vote will be called and two new DAA Chairmen must be elected.
-The personal liability of a DAA Chairman is limited to cases of gross negligence.
+The term of office for the DAA Council member starts with the foundation of this DAA and ends when he's been replaced via a proposal.
+If a DAA Council member becomes unable to act or loses his private key, he must be replaced with a new council member in the next DAA Ballot Vote.
+If all the DAA Council members are unable to act, an extraordinary DAA Ballot Vote will be called and two new DAA Council members must be elected.
+The personal liability of a DAA Council member is limited to cases of gross negligence.
 
 \item \textbf{DAA Ballot Vote ("Urabstimmung")} \\
 \begin{enumerate}[label=\textbf{\arabic*.}]
     \item \textbf{Competences} \\
     The DAA Ballot Vote shall be the highest governing body of the DAA.
-    It is chaired by one of the DAA Chairmen.
+    It is chaired by one of the DAA Council members.
     The objective of the DAA Ballot Vote is to allow every member to propose new DAA projects and to vote on the funding allocation to those projects.
     The DAA Ballot Vote has the duty of collecting all the votes on the proposals on that vote.
 
@@ -55,15 +55,15 @@ The personal liability of a DAA Chairman is limited to cases of gross negligence
     Resolutions shall be adopted by a simple majority of the members participating at the individual DAA Ballot Vote.
     At least 1/5 of the DAA Members must vote on a proposal and a simple majority to become successful.
 
-    \item \textbf{Election Process for DAA Chairman} \\
-    Any member can propose themselves for candidacy as chairman (\emph{propose \& addChairman}).
-    If the proposal is successful the new DAA Chairman term starts at the execution of the proposal.
-    Any member can also propose to remove a chairman (\emph{propose \& removeChairman})
+    \item \textbf{Election Process for DAA Council member} \\
+    Any member can propose themselves for candidacy as a council member (\emph{propose \& addCouncilMember}).
+    If the proposal is successful the new DAA Council member term starts at the execution of the proposal.
+    Any member can also propose to remove a council member (\emph{propose \& removeCouncilMember})
 
     \item \textbf{Convocation} \\
     The DAA Ballot Vote shall be held in regular intervals.
-    A DAA Chairman can set the date at least 1 month before the DAA Ballot Vote (\emph{setVotingSlot}).
-    The DAA Chairman will inform the members electronically on the date.
+    A DAA Council member can set the date at least 1 month before the DAA Ballot Vote (\emph{setVotingSlot}).
+    The DAA Council member will inform the members electronically on the date.
     A DAA Ballot Vote lasts one full day. \\ \\
 
     Every member can propose an extraordinary DAA Ballot Vote (\emph{propose}).
@@ -71,7 +71,7 @@ The personal liability of a DAA Chairman is limited to cases of gross negligence
 
     \item \textbf{Proposals \& Agenda Items} \\
     Every member can submit a proposal to pay Ether to a destination address (the amount can be zero).
-    The funding allocation via the DAA Ballot Vote is binding and technically non-reversible – not even by the DAA Chairman.
+    The funding allocation via the DAA Ballot Vote is binding and technically non-reversible – not even by the DAA Council member.
     Proposals from members must be submitted at least 7 days prior to the DAA Ballot Vote using the specific DAO proposal function (\emph{propose}).
 
 \end{enumerate}
